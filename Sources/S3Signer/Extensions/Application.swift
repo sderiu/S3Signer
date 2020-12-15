@@ -12,7 +12,7 @@ struct S3ConfigurationKey: StorageKey {
 }
 
 extension Application {
-    var s3: S3SignerAWS? {
+    public var s3: S3SignerAWS? {
         get {
             self.storage[S3ConfigurationKey.self]
         }
