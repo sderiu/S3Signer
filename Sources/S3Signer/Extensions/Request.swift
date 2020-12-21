@@ -9,6 +9,6 @@ import Vapor
 
 extension Request {
     public var s3: S3SignerAWS {
-        self.application.s3!
+        self.application.s3
     }
 }

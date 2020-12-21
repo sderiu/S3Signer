@@ -12,9 +12,12 @@ struct S3ConfigurationKey: StorageKey {
 }
 
 extension Application {
-    public var s3: S3SignerAWS? {
+    public var s3: S3SignerAWS {
         get {
-            self.storage[S3ConfigurationKey.self]
+            guard let key = self.storage[S3ConfigurationKey.self] else {
+                fatalError("Missing S3 Credentials!")
+            }
+            return key
         }
         set {
             self.storage[S3ConfigurationKey.self] = newValue
