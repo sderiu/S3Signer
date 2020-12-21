@@ -7,7 +7,7 @@ Generates V4 authorization headers and pre-signed URLs for authenticating AWS S3
 
 ### Installation (SPM)
  ```ruby
-.Package(url: "https://github.com/JustinM1/VaporS3Signer.git", majorVersion: 3)
+.Package(url: "https://github.com/sderiu/S3Signer", from: "1.0.0")
  ```
 
 ### Config File
