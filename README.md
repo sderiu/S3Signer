@@ -16,7 +16,7 @@ Generates V4 authorization headers and pre-signed URLs for authenticating AWS S3
 ```ruby
 app.s3 = .init(accessKey: "YOUR_KEY",
                secretKey: "YOUR_SECRET",
-               region: soneRegion, // -> See Region for available regions.
+               region: .someRegion, // -> See Region for available regions.
                securityToken: "YOUR_TEMP_TOKEN") 
 ```
 
