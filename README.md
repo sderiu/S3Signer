@@ -40,7 +40,7 @@ func getS3TestImage(_ req: Request) {
 
   let vaporHeaders = headers.vaporHeaders
 
-  let resp = try self.req.client.get(url, headers: vaporHeaders)
+  let resp = try req.client.get(url, headers: vaporHeaders)
  }
 ```
 
